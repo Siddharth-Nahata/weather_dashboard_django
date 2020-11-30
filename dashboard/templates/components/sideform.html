@@ -1,0 +1,19 @@
+<div>
+    <p>What is Weather Like ? </p>
+
+    <div>
+    
+    <form action="" method="POST">
+
+        {% csrf_token %}
+
+        {{ form.city_name }}
+       
+
+        <button class="btn btn-warning" type="submit">Search</button>
+        <a href="{% url 'history'%}"class="btn btn-warning" type="button">History</a>
+    
+    </form>
+    
+    </div>
+</div>
