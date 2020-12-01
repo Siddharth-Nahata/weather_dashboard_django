@@ -77,10 +77,16 @@ WSGI_APPLICATION = 'weatherdashboardproj.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dddql4utfj9098',
+        'USER' : 'fnboyyvsflunzq',
+        'PASSWORD' : 'c7b213aa11b020dfdc77903bd8c88c32414f55e85075bf141799ea4c1686acb3',
+        'HOST':'ec2-54-237-135-248.compute-1.amazonaws.com',
+        'PORT': 5432,
     }
 }
+
+
 
 
 # Password validation
